@@ -61,10 +61,12 @@ function Percents(props) {
 
     const variants = {
         hidden: { 
+            opacity: 0, y: 30
         }, 
         visible: { 
+            opacity: 1,
             transition: { 
-                delayChildren: 0.5,
+                delayChildren: 1,
                 staggerChildren: 0.5
             }
         }

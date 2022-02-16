@@ -21,7 +21,7 @@ function Navbar(props) {
         show: {
             opacity: 1, 
             transition: {
-                delayChildren: 0.5, 
+                delayChildren: 1, 
                 staggerChildren: 0.5
             }
         } 
