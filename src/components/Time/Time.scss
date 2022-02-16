@@ -1,0 +1,22 @@
+$dark: #161616;
+$not-active: #A8A8A8;
+
+label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $not-active;
+    cursor: pointer;
+    user-select: none;
+    transition: 300ms ease;
+}
+
+input {
+    display: none;      
+    &:checked + label {
+        color: $dark;
+    }
+}
+
+@media (max-width: 768px) {
+    label { font-size: 1.25rem; }
+}

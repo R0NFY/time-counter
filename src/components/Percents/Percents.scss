@@ -1,0 +1,32 @@
+$offset-from-top: -73px;
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    font-family: 'Hahmlet';
+    max-height: calc(100vh - $offset-from-top);
+    position: relative;
+}
+.text-container {
+    font-size: clamp(2.5rem, 5vw, 7rem);
+    font-variant-numeric: tabular-nums;
+    margin-top: 15vh;
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-auto-flow: row;
+        grid-template-rows: 1fr 1fr;
+    }
+    .text-container {
+        max-height: unset;
+        font-size: clamp(1rem, 7vw, 5rem);
+        margin-top: 2rem;
+        max-width: 95%;
+        grid-row: 1/2;
+        margin-inline: auto;
+    }
+}

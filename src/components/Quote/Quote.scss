@@ -1,0 +1,28 @@
+$offset: 2rem;
+$motivation-height: 14vw;
+#quote {
+    position: absolute;
+    bottom: 10rem;
+    font-weight: 300;
+    font-family: 'Epilogue';
+    font-size: 1.5rem;
+    max-width: 65vw;
+    line-height: 125%;
+    text-align: end;
+    &__author {
+        margin-top: 1rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 768px) {
+    #quote {
+        height: max-content;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        top: calc(100% + $offset*2 + $motivation-height);
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
