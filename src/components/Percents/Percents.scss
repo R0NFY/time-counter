@@ -4,7 +4,7 @@ $offset-from-top: -73px;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-evenly;
-    font-family: 'Hahmlet';
+    font-family: 'Hahmlet', serif;
     max-height: calc(100vh - $offset-from-top);
     position: relative;
 }
