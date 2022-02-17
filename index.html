@@ -7,13 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500&family=Hahmlet:wght@500&display=swap" rel="stylesheet">
-    <link rel="manifest" href="manifest.json" />
-    <!-- ios support -->
-    <link rel="apple-touch-icon" href="icon-192x192.png" />
-    <link rel="apple-touch-icon" href="icon-384x384.png" />
-    <link rel="apple-touch-icon" href="icon-512x512.png" />
-    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-    <meta name="theme-color" content="#171717" />
     <title>Time Counter</title>
   </head>
   <body>
@@ -21,14 +14,3 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-
-<script>
-  if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-    navigator.serviceWorker
-      .register("/serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err))
-  })
-}
-</script>
