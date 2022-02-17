@@ -2,6 +2,8 @@
 
 The original purpose of this project was to get used to React and take a look at Framer Motion.
 
+Live version of this project is hosted [here](http://timescounter.netlify.app/)
+
 ### The project in action:
 
 ![Alt Text](https://i.imgur.com/2vSUnxt.gif)
