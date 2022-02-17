@@ -8,9 +8,14 @@ const Quote = React.memo(() => {
     const controls = useAnimation()
 
     const getQuote = async () => {
-        let request = await fetch('https://api.quotable.io/random?tags=inspirational&maxLength=125')
-        request = await request.json()
-        setQuote({author: request.author, quote: `"${request.content}"`})
+        try {
+            let request = await fetch('https://api.quotable.io/random?tags=inspirational&maxLength=125')
+            request = await request.json()
+            setQuote({author: request.author, quote: `"${request.content}"`})
+        }
+        catch (err) {
+            setQuote({author: 'Albert Schweitzer', quote: 'Do something wonderful, people may imitate it.'})
+        }
         controls.start('show')
     }
 
